@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite DK Loopet");
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   background-color: rgb(185, 221, 235);
   background-color: rgb(243, 243, 243);
 }
@@ -50,6 +50,9 @@ h3 {
   display: block;
   width: auto;
   height: 70px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 #navbar span {
   font-family: Montserrat, Geist Mono, monospace;
@@ -213,4 +216,7 @@ span.repoButton {
   padding: 5px;
   border-radius: 15px;
   margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }

@@ -16,6 +16,9 @@
                 place-items: center;
                 transition: background-color 0.5s;
                 color: white;
+                cursor: pointer;
+                user-select: none;
+                -webkit-user-select: none;
             }
             .robot:hover {
                 background-color: rgb(38, 85, 129);
@@ -64,10 +67,7 @@
         <br><h1>View Bots Below</h1>
         <br><br><br>
         <div id="mainbody">
-            <div class="robot" id="intoTheDeep24-25">
-                <img src="images/24-25bot.png">
-                <h2 class="montserratFONT">Into The Deep, 2024-2025</h2>
-            </div>
+            
         </div>
     </body>
     <script>
@@ -77,15 +77,7 @@
         document.getElementById("linkTO-repo").onclick = function () {
             window.location.href  = "https://github.com/bearbots-bhs/gitbear";
         };
-        document.getElementById("mainbody").onclick = function() {
-            window.location.href = "bot.html";
-        }
-
-
         // BOTS:
-        document.getElementById("intoTheDeep24-25").onclick = function() {
-            localStorage.setItem("botDir", "intoTheDeep24-25");
-        }
     </script>
     <script src="main.js"></script>
 </html>
