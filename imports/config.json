@@ -1,7 +1,12 @@
 [
   {
+    "dir": "decode25-26",
+    "name": "Decode",
+    "season": "2025/2026"
+  },
+  {
     "dir": "intoTheDeep24-25",
-    "img": "24-25bot.png",
-    "name": "Into the Deep, 2024/2025"
+    "name": "Into the Deep",
+    "season": "2024/2025"
   }
 ]

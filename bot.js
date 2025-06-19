@@ -16,6 +16,10 @@ fetch (`imports/${directory}/config.json`)
     })
     .then (function(data){
         document.getElementById("title").innerHTML = data[0].name;
+        document.getElementById("season").innerHTML = data[0].season;
+        document.getElementById("img").innerHTML = `<img src="images/${data[0].image}"/>`;
+
+
         let content = "";
         for (let i = 0; i < data[1].length; i++) {
 
@@ -45,7 +49,6 @@ fetch (`imports/${directory}/config.json`)
 
             document.getElementById(`${id}`).onclick = function() {
                 window.location.href = `${link}`;
-                console.log("ok");
             }
         }
 
@@ -55,3 +58,7 @@ fetch (`imports/${directory}/config.json`)
         console.error("Error fetching json", error);
     });
 
+if (window.innerWidth <= 650) {
+    window.location.href = "small.html"
+}
+console.log("done");

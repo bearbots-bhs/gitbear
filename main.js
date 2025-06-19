@@ -7,14 +7,14 @@ fetch (`imports/config.json`)
         for (let i = 0; i < data.length; i++) {
             toAdd += `
             <div class="robot" id="${data[i].dir}">
-                <img src="images/${data[i].img}">
                 <h2 class="montserratFONT">${data[i].name}</h2>
+                <h3 class="montserratFONT">${data[i].season}</h3> 
             </div>
             <br><br>
             `
         }
         document.getElementById("mainbody").innerHTML = toAdd;
-
+        //console.log(data.length);
         for (let i = 0; i < data.length; i++) {
             document.getElementById(`${data[i].dir}`).onclick = function() {
                 localStorage.setItem("botDir", `${data[i].dir}`);
@@ -23,3 +23,8 @@ fetch (`imports/config.json`)
         }
 
     })
+
+if (window.innerWidth <= 650) {
+    window.location.href = "small.html"
+}
+console.log("done");

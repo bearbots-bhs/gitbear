@@ -49,6 +49,11 @@
             #img img:hover {
                 box-shadow: 0px 20px 20px rgba(216, 95, 3, 0.452);
             }
+
+            .googleIcon {
+                font-size: 90px;
+                color: rgb(207, 106, 13)
+            }
         </style>
     </head>
     <body>
@@ -57,14 +62,21 @@
             <img src="images/logo.png" id="mainLogo">
         </div>
         <div style="height:100px"></div> 
-        <h1 id="title">Loading....</h1>
-        <h3><span id="season">Loading...</span></h3>
+        <h1 id="title"><span class="material-symbols-outlined googleIcon">
+            desktop_mac
+            </span></h1>
+        <h3><span id="season">Your window size is too small</span></h3>
         <br>
-        <div id="img"></div>
-        <br><br>
-        <h3>SCRIPTS</h3>
+        <h3>This could be because you are using a mobile device, or using this website in a minimized window.</h3>
         <div id="mainbody">
         </div> 
     </body>
-<script src="bot.js"></script>
+    <script>
+        document.getElementById("mainLogo").onclick = function () {
+            window.location.href  = "index.html";
+        };
+        document.getElementById("linkTO-repo").onclick = function () {
+            window.location.href  = "https://github.com/bearbots-bhs/gitbear";
+        };
+    </script>
 </html>
